@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <main class="main">
+
+    <header class="main__header">
+
+      <h1>Learn to code by<br> watching others</h1>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+
+    </header>
+
+    <section class="main__content">
+
+      <p><span class="font-bold">Try it free 7 days then</span><br> $20/mo. thereafter</p>
+
+      <form id="trial-form" class="signup-form" action="#" method="post" novalidate>
+
+        <fieldset>
+
+          <legend class="sr-only">Text for screen reader...</legend>
+
+          <div class="form-group">
+
+            <input 
+              type="text"
+              name="first_name"
+              id="first-name"
+              aria-label="Your First Name"
+              placeholder="First Name"
+              required
+              aria-required="true"
+              aria-describedby="invalid-first-name"
+            >
+            <a id="invalid-first-name" class="input-error" href="#first-name"></a>
+
+          </div>
+
+          <div class="form-group">
+
+            <input 
+              type="text"
+              name="last_name"
+              id="last-name"
+              aria-label="Your Last Name"
+              placeholder="Last Name"
+              required
+              aria-required="true"
+              aria-describedby="invalid-last-name"
+            >
+            <a id="invalid-last-name" class="input-error" href="#last-name"></a>
+
+          </div>
+
+          <div class="form-group">
+
+            <input 
+              type="email"
+              name="email"
+              id="email"
+              aria-label="Your email address"
+              placeholder="Email Address"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+              aria-required="true"
+              aria-describedby="invalid-email"
+            >
+            <a id="invalid-email" class="input-error" href="#email"></a>
+
+          </div>
+
+          <div class="form-group">
+
+            <input 
+              type="password"
+              name="password"
+              id="password"
+              aria-label="Your password"
+              placeholder="Password"
+              required
+              aria-required="true"
+              aria-describedby="invalid-password"
+            >
+            <a id="invalid-password" class="input-error" href="#password"></a>
+
+          </div>
+
+        </fieldset>
+
+        <button type="submit">Claim your free trial</button>
+
+        <p class="signup-form__terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+
+      </form>
+
+    </section>
+
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Thomas Simonet</a>.
+    </p>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
